@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
   web:
-    image: "node-tudo-app:latest"
-    ports:
-      - "8000:8000"
+		build:
+			context: .
+		ports:
+			- 8000:8000
